@@ -1,4 +1,4 @@
-import { Logo } from "../../components/modules/Logo";
+import { Logo } from "@/presentation/components/modules/Logo";
 
 export function Home() {
   return (

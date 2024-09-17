@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Paragraph } from "../../elements/Paragraph";
+import { styling } from "@/application/libs/styling";
+import { Paragraph } from "@/presentation/components/elements/Paragraph";
 
-export const AppLogo = styled(Paragraph)`
+export const AppLogo = styling(Paragraph)`
     padding: 12px;
     font-size: 32px;
     font-weight: 600;

@@ -1,6 +1,6 @@
+import { Home } from "@/presentation/pages/Home";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "../pages/Home";
 
 const AppRoute: React.FC = () => {
   return (
