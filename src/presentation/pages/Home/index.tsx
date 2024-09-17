@@ -1,7 +1,9 @@
+import { Logo } from "../../components/modules/Logo";
+
 export function Home() {
   return (
     <>
-      <h1>Eve</h1>
+      <Logo />
       <p>Home!</p>
     </>
   );

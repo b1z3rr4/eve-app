@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import ThemeProvider from "./presentation/contexts/ThemeContext";
+import { ThemeProvider } from "styled-components";
 import AppRoute from "./presentation/routes";
 import { theme } from "./presentation/theme";
 
