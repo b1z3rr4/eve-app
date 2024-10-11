@@ -28,6 +28,6 @@ export const DropdownItem = styled.div`
   font-family: ${({ theme }) => theme.robotoFont};
 
   &:hover {
-      background-color: #ededed;
+      background-color: ${({ theme }) => theme.backgroundColor};
   }
 `;
