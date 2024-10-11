@@ -5,16 +5,18 @@ import AppRoute from "@/presentation/routes";
 import { theme } from "@/presentation/theme";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import { AppBar } from "./presentation/components/features/AppBar/AppBar";
 import { AuthProvider } from "./presentation/contexts/AuthContext";
 
 function App() {
   return (
     <GlobalTheme theme={theme}>
-      <AuthProvider>
-        <BrowserRouter>
+      <BrowserRouter>
+        <AuthProvider>
+          <AppBar />
           <AppRoute />
-        </BrowserRouter>
-      </AuthProvider>
+        </AuthProvider>
+      </BrowserRouter>
       <ToastContainer
         position="top-right"
         autoClose={3000}
