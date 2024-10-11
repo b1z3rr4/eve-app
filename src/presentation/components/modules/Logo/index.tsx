@@ -1,3 +1,4 @@
+import { theme } from "@/presentation/theme";
 import * as S from "./styles";
 
 export const Logo = ({ size = "md" }: { size?: "sm" | "md" | "lg" }) => {
@@ -7,5 +8,12 @@ export const Logo = ({ size = "md" }: { size?: "sm" | "md" | "lg" }) => {
     lg: 96,
   };
 
-  return <S.AppLogo fontSize={sizeOptions[size]}>eve</S.AppLogo>;
+  return (
+    <S.AppLogo
+      fontSize={sizeOptions[size]}
+      style={{ color: theme.primaryColor }}
+    >
+      eve
+    </S.AppLogo>
+  );
 };

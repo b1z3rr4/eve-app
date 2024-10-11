@@ -33,13 +33,14 @@ export const ProfileImg = styled.div<{ src?: string }>`
   padding: 15px;
   display: flex;
   font-size: 14px;
+  font-weight: 700;
   border-radius: 50%;
   align-items: center;
   background-size: cover;
   justify-content: center;
+  background-color: #dadada;
   background-position: center;
   color: ${({ theme }) => theme.surfaceColor};
   background-image: url(${(props) => props.src});
   font-family: ${({ theme }) => theme.poppinsFont};
-  background-color: ${({ theme }) => theme.textColor};
 `;
