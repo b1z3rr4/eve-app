@@ -10,6 +10,7 @@ export const theme = {
     mutedTextColor: '#636e72',
     errorColor: '#d63031',
     borderColor: '#E6E6E6',
+    hoverColor: '#00659B',
     poppinsFont: "'Poppins', sans-serif",
     poppinsSize: '16px',
     poppinsLineHeight: 1.5,
@@ -17,5 +18,6 @@ export const theme = {
     robotoFont: "'Roboto', sans-serif",
     robotoSize: "16px",
     robotoLineHeight: 1.5,
-    robotoLetterSpacing: "0.5px"
+    robotoLetterSpacing: "0.5px",
+    borderRadius: "10px",
 } as const;

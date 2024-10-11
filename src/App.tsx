@@ -1,14 +1,31 @@
+import "react-toastify/dist/ReactToastify.css";
+
 import { GlobalTheme } from "@/application/libs/styling";
 import AppRoute from "@/presentation/routes";
 import { theme } from "@/presentation/theme";
 import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import { AuthProvider } from "./presentation/contexts/AuthContext";
 
 function App() {
   return (
     <GlobalTheme theme={theme}>
-      <BrowserRouter>
-        <AppRoute />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <AppRoute />
+        </BrowserRouter>
+      </AuthProvider>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </GlobalTheme>
   );
 }
