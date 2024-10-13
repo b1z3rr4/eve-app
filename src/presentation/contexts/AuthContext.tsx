@@ -1,6 +1,6 @@
-import { useToast } from "@/application/hooks/useToast";
 import { IError } from "@/application/interfaces/error";
 import { auth } from "@/application/libs/firebase";
+import { useToast } from "@/presentation/hooks/useToast";
 import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
@@ -64,6 +64,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // ele inicia quando o componente monta -> e ele recebe uma funcao de callback e é executada qnd o componente desmonta
     const cachedUser = getSessionCache();
     if (cachedUser) {
       setCurrentUser(cachedUser);

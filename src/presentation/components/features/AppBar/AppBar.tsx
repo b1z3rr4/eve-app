@@ -28,7 +28,9 @@ export function AppBar() {
 
   return (
     <S.AppBarContainer>
-      <Logo size="sm" />
+      <S.LinkHome to="/">
+        <Logo size="sm" />
+      </S.LinkHome>
       <DropDown.Root>
         <DropDown.Trigger onClick={toggleDropdown}>
           <S.MenuContainer>

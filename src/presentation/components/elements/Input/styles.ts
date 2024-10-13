@@ -18,6 +18,5 @@ export const InputContainer = styled.input`
   &:focus {
     outline: none;
     border-color: ${({ theme }) => theme.primaryColor};
-    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
   }
 `;

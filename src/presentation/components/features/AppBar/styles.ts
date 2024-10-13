@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const AppBarContainer = styled.div`
@@ -43,4 +44,8 @@ export const ProfileImg = styled.div<{ src?: string }>`
   color: ${({ theme }) => theme.surfaceColor};
   background-image: url(${(props) => props.src});
   font-family: ${({ theme }) => theme.poppinsFont};
+`;
+
+export const LinkHome = styled(Link)`
+    text-decoration: none;
 `;
